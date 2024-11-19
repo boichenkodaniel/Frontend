@@ -74,8 +74,9 @@ body {
         grid-template-rows: [navigation-start] 1fr [navigation-end];
     }
     @media(width <= $breakpoint-phone){
-        grid-template-columns:  1fr ;
+        grid-template-columns:[navigation-start]1fr[navigation-end];
         grid-template-rows: 1fr [navigation-start] min-content [navigation-end];
+    
     }
     .navigation{
         grid-column: navigation;
@@ -95,7 +96,8 @@ body {
             border-bottom-right-radius: 0;
             border-top-left-radius: 20px;
             text-align: center;
-            gap:10px;
+            padding:10px 30px 10px 30px;
+            gap:70px;
             p{
                 display:none;
             }
@@ -176,5 +178,8 @@ body {
             }
         }
         
+    }
+    .content{
+        padding:20px;
     }
 }
